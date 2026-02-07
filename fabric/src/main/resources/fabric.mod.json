@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+    "id": "tool_swapper",
+    "version": "${version}",
+    "name": "Tool Swapper",
+    "description": "This is an example description! Tell everyone what your mod is about!",
+    "authors": [
+        "lucab"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/tool_swapper/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.lucab.tool_swapper.fabric.ModFabric"
+        ],
+        "client": [
+            "com.lucab.tool_swapper.fabric.client.ModFabricClient"
+        ]
+    },
+    "mixins": [
+        "tool_swapper.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "architectury": ">=13.0.8",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
